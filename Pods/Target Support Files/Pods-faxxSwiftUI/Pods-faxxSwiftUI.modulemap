@@ -1,0 +1,6 @@
+framework module Pods_faxxSwiftUI {
+  umbrella header "Pods-faxxSwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

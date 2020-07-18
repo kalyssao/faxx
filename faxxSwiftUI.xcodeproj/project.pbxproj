@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD6EDA1D24C36EB3001A7FC3 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6EDA1C24C36EB3001A7FC3 /* Favorites.swift */; };
+		CD6EDA1F24C3712E001A7FC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD6EDA1E24C3712E001A7FC3 /* GoogleService-Info.plist */; };
+		CDFC136A24B4FE5300449E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC136924B4FE5300449E9D /* AppDelegate.swift */; };
+		CDFC136C24B4FE5300449E9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC136B24B4FE5300449E9D /* SceneDelegate.swift */; };
+		CDFC136E24B4FE5300449E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC136D24B4FE5300449E9D /* ContentView.swift */; };
+		CDFC137024B4FE5600449E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFC136F24B4FE5600449E9D /* Assets.xcassets */; };
+		CDFC137324B4FE5600449E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFC137224B4FE5600449E9D /* Preview Assets.xcassets */; };
+		CDFC137624B4FE5600449E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFC137424B4FE5600449E9D /* LaunchScreen.storyboard */; };
+		CDFC138024B5041B00449E9D /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC137F24B5041B00449E9D /* EventManager.swift */; };
+		CDFC138224B662BC00449E9D /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC138124B662BC00449E9D /* EventData.swift */; };
+		FD0A405C6AA153D5D5BAFDD1 /* Pods_faxxSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D07B16BAE10A45B9F56432D /* Pods_faxxSwiftUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D7F6B11DC4D8462DEC12271 /* Pods-faxxSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faxxSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-faxxSwiftUI/Pods-faxxSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		6D07B16BAE10A45B9F56432D /* Pods_faxxSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faxxSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA6B663D60356A72DC6A89D /* Pods-faxxSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faxxSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-faxxSwiftUI/Pods-faxxSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6EDA1C24C36EB3001A7FC3 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		CD6EDA1E24C3712E001A7FC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDFC136624B4FE5300449E9D /* faxxSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faxxSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFC136924B4FE5300449E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDFC136B24B4FE5300449E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CDFC136D24B4FE5300449E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CDFC136F24B4FE5600449E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDFC137224B4FE5600449E9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CDFC137524B4FE5600449E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDFC137724B4FE5600449E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFC137F24B5041B00449E9D /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		CDFC138124B662BC00449E9D /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDFC136324B4FE5300449E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0A405C6AA153D5D5BAFDD1 /* Pods_faxxSwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A87EA05E0EBDD0AB150497B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6B663D60356A72DC6A89D /* Pods-faxxSwiftUI.debug.xcconfig */,
+				2D7F6B11DC4D8462DEC12271 /* Pods-faxxSwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BCB00DCF9A7E901A9BBD5AEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D07B16BAE10A45B9F56432D /* Pods_faxxSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDFC135D24B4FE5300449E9D = {
+			isa = PBXGroup;
+			children = (
+				CDFC136824B4FE5300449E9D /* faxxSwiftUI */,
+				CDFC136724B4FE5300449E9D /* Products */,
+				3A87EA05E0EBDD0AB150497B /* Pods */,
+				BCB00DCF9A7E901A9BBD5AEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDFC136724B4FE5300449E9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC136624B4FE5300449E9D /* faxxSwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDFC136824B4FE5300449E9D /* faxxSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC136924B4FE5300449E9D /* AppDelegate.swift */,
+				CDFC136B24B4FE5300449E9D /* SceneDelegate.swift */,
+				CDFC136D24B4FE5300449E9D /* ContentView.swift */,
+				CDFC136F24B4FE5600449E9D /* Assets.xcassets */,
+				CDFC137424B4FE5600449E9D /* LaunchScreen.storyboard */,
+				CDFC137724B4FE5600449E9D /* Info.plist */,
+				CDFC137124B4FE5600449E9D /* Preview Content */,
+				CDFC137F24B5041B00449E9D /* EventManager.swift */,
+				CDFC138124B662BC00449E9D /* EventData.swift */,
+				CD6EDA1C24C36EB3001A7FC3 /* Favorites.swift */,
+				CD6EDA1E24C3712E001A7FC3 /* GoogleService-Info.plist */,
+			);
+			path = faxxSwiftUI;
+			sourceTree = "<group>";
+		};
+		CDFC137124B4FE5600449E9D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC137224B4FE5600449E9D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDFC136524B4FE5300449E9D /* faxxSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFC137A24B4FE5600449E9D /* Build configuration list for PBXNativeTarget "faxxSwiftUI" */;
+			buildPhases = (
+				B7685960E56257B034EF2E93 /* [CP] Check Pods Manifest.lock */,
+				CDFC136224B4FE5300449E9D /* Sources */,
+				CDFC136324B4FE5300449E9D /* Frameworks */,
+				CDFC136424B4FE5300449E9D /* Resources */,
+				91C6C617F96A0F5EE8D8004D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = faxxSwiftUI;
+			productName = faxxSwiftUI;
+			productReference = CDFC136624B4FE5300449E9D /* faxxSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDFC135E24B4FE5300449E9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = LVZ;
+				TargetAttributes = {
+					CDFC136524B4FE5300449E9D = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CDFC136124B4FE5300449E9D /* Build configuration list for PBXProject "faxxSwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDFC135D24B4FE5300449E9D;
+			productRefGroup = CDFC136724B4FE5300449E9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDFC136524B4FE5300449E9D /* faxxSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDFC136424B4FE5300449E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFC137624B4FE5600449E9D /* LaunchScreen.storyboard in Resources */,
+				CD6EDA1F24C3712E001A7FC3 /* GoogleService-Info.plist in Resources */,
+				CDFC137324B4FE5600449E9D /* Preview Assets.xcassets in Resources */,
+				CDFC137024B4FE5600449E9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91C6C617F96A0F5EE8D8004D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faxxSwiftUI/Pods-faxxSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faxxSwiftUI/Pods-faxxSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faxxSwiftUI/Pods-faxxSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7685960E56257B034EF2E93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-faxxSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDFC136224B4FE5300449E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFC136A24B4FE5300449E9D /* AppDelegate.swift in Sources */,
+				CDFC136C24B4FE5300449E9D /* SceneDelegate.swift in Sources */,
+				CDFC138224B662BC00449E9D /* EventData.swift in Sources */,
+				CD6EDA1D24C36EB3001A7FC3 /* Favorites.swift in Sources */,
+				CDFC138024B5041B00449E9D /* EventManager.swift in Sources */,
+				CDFC136E24B4FE5300449E9D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDFC137424B4FE5600449E9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDFC137524B4FE5600449E9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDFC137824B4FE5600449E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDFC137924B4FE5600449E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDFC137B24B4FE5600449E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA6B663D60356A72DC6A89D /* Pods-faxxSwiftUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"faxxSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = faxxSwiftUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madebythelyss.faxxSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CDFC137C24B4FE5600449E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D7F6B11DC4D8462DEC12271 /* Pods-faxxSwiftUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"faxxSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = faxxSwiftUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madebythelyss.faxxSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDFC136124B4FE5300449E9D /* Build configuration list for PBXProject "faxxSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFC137824B4FE5600449E9D /* Debug */,
+				CDFC137924B4FE5600449E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFC137A24B4FE5600449E9D /* Build configuration list for PBXNativeTarget "faxxSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFC137B24B4FE5600449E9D /* Debug */,
+				CDFC137C24B4FE5600449E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDFC135E24B4FE5300449E9D /* Project object */;
+}
