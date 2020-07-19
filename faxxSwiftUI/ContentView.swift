@@ -11,12 +11,15 @@ import SwiftUI
 struct ContentView: View {
     @State var index = 0
     @ObservedObject var eventApi = EventManager()
+	
     var body: some View {
 
         NavigationView {
-            Landing().navigationBarTitle("")
-            TabBar(index: $index)
-        }.onAppear() {
+			//ZStack {
+				//Landing()
+			TabBar(index: self.$index)
+			//}
+		}.onAppear() {
             self.eventApi.getEvents()
         }
     }
@@ -28,34 +31,47 @@ struct TabBar: View {
         
         HStack {
             Button(action: {
+				
                 self.index = 0
+				
             }) {
-                Image("menu")
+				Image("menu").resizable()
+				.aspectRatio(contentMode: .fit)
                 
-            }.foregroundColor(Color("accentColor").opacity(self.index == 1 ? 1 : 0.2))
+			}.foregroundColor(Color.black.opacity(self.index == 0 ? 1 : 0.2))
             
+			Spacer(minLength: 0)
+			
             Button(action: {
-                self.index = 1
+                
+				self.index = 1
+				
             }) {
-                Image(systemName: "shuffle")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding(5)
-                .frame(width: 40, height: 40, alignment: .center)
-                
-            }.foregroundColor(Color("accentColor").opacity(self.index == 1 ? 1 : 0.2))
+				Image(systemName: "shuffle")
+				.renderingMode(.original)
+				.resizable()
+				.clipShape(Circle())
+				//.frame(width: 100, height: 50)
+				//.overlay(Circle().stroke(Color.white, lineWidth: 4).shadow(radius: 10))
+				.aspectRatio(contentMode: .fit)
+				
+			}.offset(y: -40)
             
+			Spacer(minLength: 0)
+			
             Button(action: {
+				
                 self.index = 2
+				
             }) {
                 Image("bookmark")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .padding(5)
-                    .frame(width: 40, height: 40, alignment: .center)
                 
-            }.foregroundColor(Color("accentColor").opacity(self.index == 1 ? 1 : 0.2))
-        }
+			}.foregroundColor(Color.black.opacity(self.index == 2 ? 1 : 0.2))
+		
+		}.padding(.horizontal, 35)
+		.background(Color.white)
         
     }
 }
@@ -87,17 +103,8 @@ struct Landing: View {
                     .background(Color("accentColor"))
             }
             
-        }
+        }.navigationBarTitle("")
         
-    }
-}
-
-struct SingleVIew: View {
-    var body: some View {
-        VStack {
-            Spacer()
-            
-        }
     }
 }
 
@@ -212,8 +219,106 @@ struct Events: View {
             
             Spacer()
         
-        }.navigationBarTitle("")
-        .navigationBarBackButtonHidden(false)
+		}.navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+    }
+}
+
+struct SingleVIew: View {
+    @ObservedObject var eventApi = EventManager()
+    @Binding var show: Bool
+	@Binding var choice: String
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Button(action: {
+                    
+                    self.show.toggle()
+                    
+                }) {
+                        Image("arrow").renderingMode(.original)
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .aspectRatio(1, contentMode: .fit)
+                    }
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                    
+                }) {
+                
+                    Image("menu").renderingMode(.original)
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .aspectRatio(1, contentMode: .fit)
+                
+                }
+                
+            }.padding()
+            
+            Text("Today In \(choice)").font(.title)
+            
+            GeometryReader { geo in
+                //ScrollView(.horizontal) {
+                    if self.eventApi.dataHasLoaded {
+                        HStack(spacing: 10) {
+                            //ForEach(0..<30) { i in
+                                //Text("Date \(self.eventApi.events[i].year)")
+                                //Text(verbatim: "\(self.eventApi.events[i].text)")
+                            DetailView(date: self.eventApi.date, year: self.eventApi.events[1].year, eventText: self.eventApi.events[1].text).padding()
+                            //}
+                        }
+                            .frame(maxWidth: geo.size.width, maxHeight: geo.size.height*0.9)
+                        
+                    } else {
+                        Text("Loading data")
+                    }
+            //    }
+            }
+            
+            Spacer()
+            
+            Button(action: {
+                // reveal menu
+                print("event pressed")
+                
+            }) {
+                HStack {
+                    Spacer()
+                    
+                    Button(action: {
+                        // move to next item in cache
+                        
+                    }) {
+                        Spacer()
+                        HStack {
+                            Text("Next Fact")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                            
+                            Image("forward").renderingMode(.original)
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .aspectRatio(1, contentMode: .fit)
+                        
+                        }.padding().background(Color("accentColor"))
+                        
+                    }
+                    
+                    
+                }.padding()
+            }
+            
+            Spacer()
+            
+        }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -285,7 +390,8 @@ struct Births: View {
                 }.padding()
             }
         }.navigationBarTitle("")
-        .navigationBarBackButtonHidden(false)
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     
     }
 }
@@ -358,8 +464,8 @@ struct Deaths: View {
                 }.padding()
             }
         }.navigationBarTitle("")
-        .navigationBarHidden(false)
-        .navigationBarBackButtonHidden(false)
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
